@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task List with Drag and Drop</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <h2>Task List</h2>
+
+    <div class="task-container">
+        <input type="text" id="task-input" placeholder="Enter task">
+        <button id="task-button">Add Task</button>
+        <div id="task-list" class="task-list" ondrop="drop(event)" ondragover="allowDrop(event)">
+        </div>
+        <button id="save-selected-tasks">Show Tasks</button>
+    </div>
+
+    <h2>Task Table</h2>
+    <table id="task-table">
+        <thead>
+            <tr>
+                <th>Serial No.</th>
+                <th>Task</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody>
+           
+        </tbody>
+    </table>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

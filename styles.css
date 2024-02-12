@@ -1,0 +1,153 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9eeff;
+}
+
+h2 {
+    text-align: center;
+    color:rgb(0, 0, 0);
+    margin-top: 20px;
+}
+
+.task-container {
+    width: 420px;
+    border: 1px solid #ccc;
+    padding: 25px;
+    margin: 0 auto;
+    background-color: #fff;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+}
+
+#task-input {
+    width: calc(100% - 80px);
+    padding: 8px;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+}
+
+input#task-input {
+    width: 97%;
+    padding: 13px 5px;
+    font-size: 18px;
+}
+
+#task-input:focus {
+    border-color: #d3aef3;
+}
+
+#task-input::placeholder {
+    color: #aaa;
+}
+
+#task-input:focus::placeholder {
+    color: transparent;
+}
+
+#task-input,
+#task-button {
+    vertical-align: middle;
+}
+
+#task-button {
+    
+    width:25%;
+    margin: 10px 0px;
+    padding: 12px 4px;
+    background-color:#a180fb;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    outline: none;
+    transition: 1s all;
+}
+
+#task-button:hover {
+    background-color: #d6b1f7;
+}
+
+.task {
+    cursor: pointer;
+    padding: 10px;
+    margin-bottom: 5px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.task:hover {
+    background-color: #f0f0f0;
+}
+
+.task input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+.task.dragging {
+    opacity: 0.5;
+}
+
+
+#save-selected-tasks {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    background-color: #a180fb;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    outline: none;
+    transition: background-color 0.3s ease;
+}
+
+#save-selected-tasks:hover {
+    background-color: #ba9ceb;
+}
+
+
+
+/* Styles for task table */
+#task-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+#task-table th, #task-table td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+#task-table th {
+    background-color: #f2f2f2;
+}
+
+#task-table tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+#task-table tbody tr:hover {
+    background-color: #f0f0f0;
+}
+
+#task-table td button {
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color:#a180fb;
+    color: #fff;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+}
+
+#task-table td button:hover {
+    background-color:rgb(168, 120, 207)
+}
